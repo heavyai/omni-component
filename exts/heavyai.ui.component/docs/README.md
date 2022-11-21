@@ -2,7 +2,7 @@
 
 This component system was first presented during a NVIDIA Partner Spotlight with HEAVY.AI and can be found [here on YouTube](https://youtu.be/QhBMgx2G86g?t=1640)
 
-![Slide presented during NVIDIA Omniverse Partner Spotlight](./exts/heavyai.ui.component/resources/partner-spotlight-slide.png)
+![Slide presented during NVIDIA Omniverse Partner Spotlight](../resources/partner-spotlight-slide.png)
 
 ## Goals
 
@@ -153,7 +153,9 @@ class ParentComponent(Component):
         prim = # get prim reference
 
         with self.get_root(ui.VStack):
-            self.child = UsdSubscribingComponent(prim=prim)
+            self.child = UsdSubscribingComponent(
+                prim=prim
+            )
 
     def destroy(self):
         self.child.destroy()
