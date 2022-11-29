@@ -16,7 +16,7 @@ readme  = "./docs/README.md"
 repository = "https://github.com/heavyai/omni-component"
 
 # One of categories for UI.
-category = "Rendering"
+category = "other"
 
 # Keywords for the extension
 keywords = ["heavyai", "component", "react"]
