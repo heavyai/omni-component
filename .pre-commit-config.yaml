@@ -12,18 +12,6 @@
 
 repos:
 
-# Remove any leftover legacy HEAVY.AI/OmniSci/MapD header BEFORE verify-copyright
-# runs, so the NVIDIA SPDX header replaces it rather than stacking on top of it.
-- repo: local
-  hooks:
-    - id: strip-legacy-license-header
-      name: strip legacy HEAVY.AI/OmniSci/MapD license headers
-      entry: python3 scripts/strip_legacy_license_header.py
-      language: system
-      files: &license_files |
-        (?x)
-          [.](py)$
-
 # Insert/maintain the NVIDIA SPDX header. --spdx emits the two-line
 # SPDX-FileCopyrightText / SPDX-License-Identifier block; the year range is
 # derived from git history and auto-bumped on edit.
@@ -32,4 +20,7 @@ repos:
   hooks:
     - id: verify-copyright
       args: [--fix, --spdx]
-      files: *license_files
+      files: |
+        (?x)
+          [.](py)$
+
