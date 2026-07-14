@@ -1,6 +1,11 @@
-# HEAVY.AI | Omni.Ui Component System
+# HeavyAI | Omni.Ui Component System
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/heavyai/omni-component/blob/main/LICENSE.txt)
+[![Security](https://img.shields.io/badge/Security-Report%20a%20Vulnerability-red.svg)](https://github.com/heavyai/omni-component/blob/main/SECURITY.md)
+[![GitHub Discussions](https://img.shields.io/badge/GitHub-Discussions-blue?logo=github)](https://github.com/orgs/heavyai/discussions)
 
-This component system was first presented during a NVIDIA Partner Spotlight with HEAVY.AI and can be found [here on YouTube](https://youtu.be/QhBMgx2G86g?t=1640)
+
+
+This component system was first presented during a NVIDIA Partner Spotlight with HeavyAI and can be found [here on YouTube](https://youtu.be/QhBMgx2G86g?t=1640)
 
 ![Slide presented during NVIDIA Omniverse Partner Spotlight](./exts/heavyai.ui.component/resources/partner-spotlight-slide.png)
 
@@ -158,3 +163,17 @@ class ParentComponent(Component):
     def destroy(self):
         self.child.destroy()
 ```
+
+
+## Security
+> [!WARNING]
+> **Do not report security vulnerabilities through public GitHub issues!**
+
+NVIDIA takes security seriously. If you discover a vulnerability in omni-component, **DO NOT open a public issue**. Use one of the private reporting channels described in [SECURITY.md](https://github.com/heavyai/omni-component/blob/main/SECURITY.md).
+
+## Support
+Join the [HeavyAI GitHub Discussions](https://github.com/orgs/heavyai/discussions) to ask questions, share feedback, and report issues. HeavyAI maintainers review issues, discussions, and pull requests on a best effort basis without guaranteed response timelines.
+  
+## License
+Apache 2.0. See [LICENSE](https://github.com/heavyai/omni-component/blob/main/LICENSE.txt).
+
